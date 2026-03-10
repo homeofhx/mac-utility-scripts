@@ -1,10 +1,24 @@
-# About This Mac
+# Mac Utility Scripts
+ 
+A collection of utility scripts for Mac computer and Mac OS.
+ 
+## [IPSW Fetcher](https://github.com/homeofhx/mac-utility-scripts/blob/main/IPSWFetcher.sh)
+ 
+A Shell script for easy fetching and downloading macOS IPSW firmwares since macOS 11 (Big Sur) in the terminal, by utilizing [AppleDB's API](https://github.com/littlebyteorg/appledb/blob/main/API.md).
+ 
+### How to Use
+ 
+Download the script, then open a terminal window and use the command to run the script:
+ 
+`sh /PATH/TO/IPSWFetcher.sh`
+ 
+A list of available macOS IPSW firmwares will be shown. Follow the on-screen instructions to download a macOS IPSW firmware.
 
-A simple AppleScript that provides a convenient way to view key details about the current Mac with just a click, offering an instant overview and saving time looking through scattered information in Mac OS. No other software installations are needed, just using the (Apple)Script Editor that's built-in to Mac OS.
+## [About This Mac](https://github.com/homeofhx/mac-utility-scripts/blob/main/AboutThisMac.applescript)
 
-## What This AppleScript Can Get
+An AppleScript that provides a convenient way to view key details about the current Mac computer.
 
-As for Revision 5, this AppleScript can get the following information about the Mac:
+As for Revision 6, this AppleScript can get:
 
 |Information|Minimum Software/Hardware Requirement*|
 |-|-|
@@ -35,7 +49,7 @@ As for Revision 5, this AppleScript can get the following information about the 
 
 **unless otherwise specified, assume that the minimum software/hardware requirement is "Mac OS 10.6 or higher, X86 Macs or newer" by default.*
 
-## How To Use
+### How to Use
 
 1. Download `AboutThisMac.applescript` and open it in (Apple)Script Editor;
 

@@ -1,4 +1,4 @@
-# About This Mac - Revision 5 - Author: Harry Xie
+# About This Mac - Revision 6 - Author: Harry Xie
 
 set modelID to do shell script "sysctl -n hw.model"
 set modelNum to do shell script "system_profiler SPHardwareDataType | awk '/Model Number/ {print $3}'"
@@ -25,7 +25,7 @@ set wifiCh to do shell script "system_profiler SPAirPortDataType | grep \"Channe
 set wifiCt to do shell script "system_profiler SPAirPortDataType | grep \"Country Code:\" | awk -F: '{print $2}' | sed 's/^[[:space:]]*//' | head -n 1"
 set iclStatus to do shell script "system_profiler SPHardwareDataType | grep \"Activation Lock Status\" | awk '{print $NF}'"
 set devmngStatus to do shell script "profiles status -type enrollment | grep -oE 'Yes|No' | paste -s -d '/' -"
-set pfCount to do shell script "sudo profiles -L | grep \"profileIdentifier:\" | wc -l | tr -d ' '"
+set pfCount to do shell script "profiles list 2>/dev/null | grep -c 'profileIdentifier:'; exit 0" with administrator privileges
 
 display dialog "This is: " & modelID & " " & modelNum & return & Â
 	"Serial Number: " & sn & return & return & Â
