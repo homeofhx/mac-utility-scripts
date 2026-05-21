@@ -56,3 +56,7 @@ As for Revision 6, this AppleScript can get:
 	- if it's opened in other editors, manually open it in (Apple)Script Editor.
 
 2. Run the script to get the current Mac's information that are specified above.
+
+## [Awake](https://github.com/homeofhx/mac-utility-scripts/blob/main/Awake.applescript)
+
+AppleScript version of [Awake](https://github.com/homeofhx/awake). Works on Mac OS 9 or higher.
